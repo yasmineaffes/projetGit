@@ -1,0 +1,84 @@
+.navbar {
+    margin-top: -50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:#0a0a0a; 
+
+}
+
+.logo {
+    height: 150px;
+    width: 150px;
+    margin-left: 2%;
+    animation: beat 4s infinite;
+
+
+}
+@keyframes beat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.8);
+    }
+}
+  
+
+.home-button {
+    margin-left:  70%;
+    margin-top: 17px;
+    color: rgb(14, 14, 14);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.language {
+    padding-right: 2%;
+    font-weight: bold;
+    font-size: larger;
+    cursor: pointer;
+    position: relative;
+}
+
+.language-text {
+    display: inline-block;
+}
+
+.language-text.hovered {
+    color:#f4b917; 
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border-radius: 10%;
+    overflow: hidden;
+    z-index: 1000;
+    white-space: nowrap;
+}
+
+.language:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item {
+    cursor: pointer;
+    padding: 8px 16px;
+    background: none;
+    border: none;
+    text-align: left;
+    width: 100%;
+    color: inherit;
+}
+
+.dropdown-item.selected {
+    color:#f4b917; 
+
+}
+

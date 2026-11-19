@@ -1,0 +1,390 @@
+@import url('https://fonts.google.com/specimen/Oswald?preview.text=Discover%20the%20power%20of%20AI');
+
+.signin-container {
+    margin-top: -3%;
+    display: flex;
+    align-items: center;
+    margin-right: 2%;
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    top: -50px;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 113%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.pageGarde {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+
+.title {
+    text-align: left;
+    font-family: 'Oswald';
+    font-weight: bold;
+    padding-left: 2%;
+    padding-bottom: 2%;
+    color: #ffffff;
+    filter: drop-shadow(0 0 5px #ffffff) drop-shadow(0 0 10px #614ad3);
+    animation: glowing 1.5s ease-in-out infinite alternate;
+
+}
+
+
+@keyframes glowing {
+    from {
+        filter: drop-shadow(0 0 5px #ffffff) drop-shadow(0 0 10px #614ad3);
+    }
+
+    to {
+        filter: drop-shadow(0 0 10px #ffffff) drop-shadow(0 0 20px #614ad3);
+    }
+}
+
+
+
+.left-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding-top: 50px;
+}
+
+/* Animation */
+.wordCarousel {
+    font-size: 24px;
+    font-weight: 100;
+    color: #eee;
+
+    div {
+        overflow: hidden;
+        position: relative;
+        float: right;
+        height: 65px;
+        padding-top: 10px;
+        margin-top: -10px;
+
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            position: relative;
+        }
+
+        li {
+            font-family: 'Microsoft YaHei UI';
+            color: #dad8d8;
+            font-weight: bold;
+            height: 45px;
+            margin-bottom: 45px;
+            display: block;
+        }
+    }
+}
+
+.highlight {
+    color: orange;
+}
+
+.description {
+    padding-left: 2%;
+}
+
+
+
+.flip2 {
+    animation: flip2 12s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+
+.flip3 {
+    animation: flip3 16s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+
+.flip4 {
+    animation: flip4 20s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+
+.flip5 {
+    animation: flip5 24s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+
+@keyframes flip2 {
+    0% {
+        margin-top: -180px;
+    }
+
+    5% {
+        margin-top: -90px;
+    }
+
+    50% {
+        margin-top: -90px;
+    }
+
+    55% {
+        margin-top: 0px;
+    }
+
+    99.99% {
+        margin-top: 0px;
+    }
+
+    100% {
+        margin-top: -180px;
+    }
+}
+
+@keyframes flip3 {
+    0% {
+        margin-top: -270px;
+    }
+
+    5% {
+        margin-top: -180px;
+    }
+
+    33% {
+        margin-top: -180px;
+    }
+
+    38% {
+        margin-top: -90px;
+    }
+
+    66% {
+        margin-top: -90px;
+    }
+
+    71% {
+        margin-top: 0px;
+    }
+
+    99.99% {
+        margin-top: 0px;
+    }
+
+    100% {
+        margin-top: -270px;
+    }
+}
+
+@keyframes flip4 {
+    0% {
+        margin-top: -360px;
+    }
+
+    5% {
+        margin-top: -270px;
+    }
+
+    25% {
+        margin-top: -270px;
+    }
+
+    30% {
+        margin-top: -180px;
+    }
+
+    50% {
+        margin-top: -180px;
+    }
+
+    55% {
+        margin-top: -90px;
+    }
+
+    75% {
+        margin-top: -90px;
+    }
+
+    80% {
+        margin-top: 0px;
+    }
+
+    99.99% {
+        margin-top: 0px;
+    }
+
+    100% {
+        margin-top: -360px;
+    }
+}
+
+@keyframes flip5 {
+    0% {
+        margin-top: -450px;
+    }
+
+    5% {
+        margin-top: -360px;
+    }
+
+    20% {
+        margin-top: -360px;
+    }
+
+    25% {
+        margin-top: -270px;
+    }
+
+    40% {
+        margin-top: -270px;
+    }
+
+    45% {
+        margin-top: -180px;
+    }
+
+    60% {
+        margin-top: -180px;
+    }
+
+    65% {
+        margin-top: -90px;
+    }
+
+    80% {
+        margin-top: -90px;
+    }
+
+    85% {
+        margin-top: 0px;
+    }
+
+    99.99% {
+        margin-top: 0px;
+    }
+
+    100% {
+        margin-top: -450px;
+    }
+}
+
+/* style buttons sign in / signup */
+.signup-btn:hover {
+    color: rgb(236, 155, 5);
+    background-color: rgb(254, 252, 252);
+}
+
+.signin-btn:hover {
+    color: rgb(236, 155, 5);
+    background-color: rgb(242, 239, 239);
+}
+
+.signup-btn {
+    border-radius: 25px;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Britannic';
+    padding: 10px;
+    width: 150px;
+    height: 50px;
+    border: none;
+}
+
+.signin-btn {
+    border-radius: 25px;
+    color: rgb(254, 252, 252);
+    background-color: rgb(236, 155, 5);
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Britannic';
+    padding: 10px;
+    width: 150px;
+    height: 50px;
+    border: none;
+}
+
+.signup-btn {
+    margin-left: 20px;
+}
+
+.buttons {
+
+    margin-top: 30%;
+    margin-right: 36%;
+    display: flex;
+    height: 100px;
+}
+
+
+@media (max-width: 700px) {
+    .pageGarde {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .left-container {
+        width: 100%;
+        align-items: center;
+        padding-top: 20px;
+    }
+
+    .title {
+        font-size: 2.5em;
+        padding-left: 0;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+
+    .signin-container {
+        margin-top: -17%;
+        margin-left: 20%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .buttons {
+        margin-right: 0;
+        margin-top: 20px;
+        justify-content: center;
+    }
+    .description {
+        display: none;
+      }
+      .wordCarousel {
+        display: none;
+      }
+}
+
+@media (max-width: 400px) {
+    .left-container {
+        width: 100%;
+        height: 70%;
+        padding: 1%;
+    }
+    .signin-container {
+        width: 90%;
+        margin-left: 30%;
+        margin-top: -20%;
+
+    }
+    .description {
+      display: none;
+    }
+    .wordCarousel {
+      display: none;
+    }
+}

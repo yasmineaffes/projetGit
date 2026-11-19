@@ -1,0 +1,48 @@
+.services {
+  display: flex;
+  align-items: center;
+  padding-left: 2%;
+  padding-right: 1%;
+  background: #56015b;
+	background: linear-gradient(#665071, #560278);  
+  margin-top: -17px;
+  height: 50px;
+  font-size:16px;
+}
+
+.service {
+  display: flex;
+  align-items: center;
+  padding: 10px 10px;
+  margin-right: 20px;
+  color: white;
+  margin-left: 3%;
+
+}
+.serviceform{
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-left: 3%;
+}
+.serviceform p{
+  padding-top: 10px;
+  font-weight: bold;
+}
+.service p {
+  padding-top: 10px;
+  font-weight: bold;
+}
+
+.serviceIcon {
+  width: 20%;
+  height: 19%;
+}
+.FormIcon{
+  width: 20%;
+  height: 19%;
+}
+
+
+
+

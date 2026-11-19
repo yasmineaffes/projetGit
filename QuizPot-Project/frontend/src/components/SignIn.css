@@ -1,0 +1,198 @@
+.error-message {
+    color: #ff0000;
+    font-size: 12px;
+    margin-top: 5px;
+    width: 100%;
+    font-weight: bold;
+    background-color: rgb(253, 236, 236);
+    padding: 4px;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+  .TitleSignIn{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding: 12px;
+    color: white;
+  }
+  .FormField label {
+    margin-bottom: 5px; 
+    width: fit-content;
+    user-select: none;
+    font-weight: bold;
+
+  }
+  .FormField input{
+    padding: 8px;
+     padding-bottom: 18px;  
+     padding-top: 18px; 
+     color: white;
+     border: none;
+
+
+  }
+
+
+.MotDePasseOublie 
+{
+    text-align: right;
+   margin-top: 5px;
+   margin-bottom: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.MotDePasseOublie :hover{
+  cursor: pointer;
+
+}
+
+.MotDePasseOublie a
+{
+ 
+    text-decoration: none;
+    font-weight: bold;
+
+  }
+  .FormField{
+    margin-bottom: 15px;
+    color: white;
+    border: none;
+
+
+  }
+  .email,.MotPasse {
+    display: block; 
+  }
+  .Inscrivez{
+    padding-left: 20px;
+    text-align: center;
+    margin-top: 10px;
+    font-size:11px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+
+  }
+  #usermail,#password{
+    border-radius: 4px;
+    background-color:rgb(241, 239, 239);
+    height: 25px;
+    width:275px;
+    border: none;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    color: rgb(36, 36, 36);
+
+  }
+ 
+  .SeConnecter{
+    background-color: rgb(236, 155, 5);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    display: block; 
+    margin: 0 auto;
+    width: 275px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+
+ 
+
+  .email,.MotPasse{
+    color: white;
+    font-size: 13px;
+  }
+  .SignIn{
+    color: white;
+    display: flex;
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center; 
+    width:300px;
+    flex-direction: column; 
+    margin-right:100px;
+    margin-top:100px;
+  }
+  .PasswordContainer {
+      position: relative;
+  }
+  
+  .PasswordToggleBtn {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: rgb(36, 36, 36);
+    }
+  .PasswordToggleBtn i{
+    font-size: 20px;
+
+  }
+  
+  .PasswordToggleBtn:focus {
+      outline: none;
+  }
+  
+  @media screen and (max-width: 700px) {
+  }
+  @media screen and (max-width: 1000px) and (min-width:700px) {
+  .TitleSignIn{
+   font-size: 15px;
+  }
+  .SignIn{
+   
+    width:250px;
+    margin-top:100px;
+    margin-right:10px;
+  
+  }
+  .FormField{
+    margin-bottom: 10px;
+  }
+  .email,.MotPasse {
+    display: block; 
+  }
+  .Inscrivez{
+    padding-left: 10px;
+    text-align: center;
+    font-size:9px;
+  }
+  #usermail,#password{
+    border-radius: 4px;
+    border: none;
+    background-color:rgb(230,230,230);
+    height: 20px;
+    width:200px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  .SeConnecter{
+    background-color: rgb(236, 155, 5);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    display: block; 
+    margin: 0 auto; 
+    width: 200px;
+    margin-top: 7px;
+  
+  }
+  }
+  
+  @media screen and (max-width: 1200px) and (min-width: 1000px) {
+    .SignIn{
+    margin-right:10px;
+  } 
+  
+  }

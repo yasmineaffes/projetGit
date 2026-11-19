@@ -1,0 +1,203 @@
+.homePage{
+    background-color: rgba(251, 253, 253, 0.324);
+    margin-top: -3%;
+    padding: 1px; 
+    height: 100%;
+    width: 100%;
+    position: fixed;
+}
+.welcome , .welcomeText{
+  padding-left: 6%;
+  font-weight: bold;
+}
+.welcome-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.dashboard-button {
+  background-color: white;
+  color: rgb(238, 156, 4);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  display: flex;
+  font-weight: bold;
+  animation: beat 5s infinite;
+}
+@keyframes beat {
+  0%, 100% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(0.8);
+  }
+}
+
+.IconDashboard{
+  width: 30px;
+  height: 30px;
+}
+
+.welcome{
+  padding-top: 1%;
+  color: rgb(236, 155, 5);
+
+}
+.logout-btn{
+  color: rgb(253, 166, 3);
+  cursor:pointer;
+
+}
+.logout-btn:hover{
+  cursor:pointer;
+}
+
+.formcontent.selected,
+.questionsContent.selected,
+.myquizzesContent.selected {
+    color: black; 
+}
+
+
+.content{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    height: 340px;
+    font-weight: bold;
+    color: rgb(146, 146, 146); 
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    cursor: pointer;
+    position:fixed;
+    margin-left: 9%;
+}
+.titleContent{
+  text-align: center;
+  color: rgb(236, 155, 5);
+}
+
+
+.IconDashboard {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.IconContent {
+  width: 35px;
+  height: 35px;
+  margin-right: 8px;
+}
+
+.IconLogout {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+
+/*score style*/
+.score-wrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: rgb(231, 199, 249);
+  }
+  
+  .score {
+    width: 150px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: white; 
+
+  }
+  
+  .score-bar {
+    position: absolute;
+    width: 130%;
+    height: 140%;
+    border-radius: 50%;
+    top: 0;
+    background-color: transparent; 
+
+  }
+  
+  .score-bar .score-circle {
+    position: absolute;
+    top: 0;
+  }
+  
+  .score-value {
+    text-align: center;
+    color: black;
+
+
+  }
+  
+  .score-name {
+    color: black;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  }
+  
+  .score-number {
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+
+  }
+  
+  .welcome {
+    display: flex;
+    align-items: center; 
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 25px ;  
+  }
+  
+  .welcome > div:first-of-type {
+    animation: showup 15s infinite;
+    margin-right: 5px; 
+  }
+  
+  .welcome > div:last-of-type {
+    width: 0px;
+    animation: reveal 15s infinite;
+  }
+  
+  .welcome > div:last-of-type span {
+    margin-left: -355px;
+    animation: slidein 19s infinite;
+  }
+  
+  @keyframes showup {
+    0% { opacity: 0; }
+    20% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  
+  @keyframes slidein {
+    0% { margin-left: -800px; }
+    20% { margin-left: -800px; }
+    35% { margin-left: 0px; }
+    100% { margin-left: 0px; }
+  }
+  
+  @keyframes reveal {
+    0% { opacity: 0; width: 0px; }
+    20% { opacity: 1; width: 0px; }
+    30% { width: 355px; }
+    80% { opacity: 1; }
+    100% { opacity: 0; width: 355px; }
+  }
+  

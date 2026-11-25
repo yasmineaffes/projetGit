@@ -3,7 +3,6 @@ const fs = require("fs");
 const path = require('path');
 
 
-// Access your API key as an environment variable (see "Set up your API key" above)
 const genAI = new GoogleGenerativeAI('AIzaSyByCX2MbBweVqrm8Fjw63ZmzLHJVQZ6IPo');
 
 // Converts local file information to a GoogleGenerativeAI.Part object.
@@ -17,7 +16,7 @@ function fileToGenerativePart(path, mimeType) {
 }
 
 async function runImage(path,mimeType,promptText) {
-  // The Gemini 1.5 models are versatile and work with both text-only and multimodal prompts
+  
   const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
 

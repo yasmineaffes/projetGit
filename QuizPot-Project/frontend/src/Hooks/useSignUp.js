@@ -17,6 +17,7 @@ export const useSignup = () => {
                 email,
                 password
             });
+            console.log(' Response:', response); 
 
             const json = response.data;
             //console.log('API Response:', json); 

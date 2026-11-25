@@ -11,9 +11,15 @@ const responseFormRoutes = require('./routes/responseform');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
-
+const corsOptions = {
+  origin: "http://localhost:3000",
+  methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+  credentials: true,
+};
 
 // Middleware
+app.use(cors(corsOptions));
 app.use(express.json());
 
 

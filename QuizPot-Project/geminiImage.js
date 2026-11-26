@@ -3,8 +3,9 @@ const fs = require("fs");
 const path = require('path');
 
 
-const genAI = new GoogleGenerativeAI(GEMINI_API_KEY);
+require("dotenv").config({ path: path.resolve(__dirname, ".env") });
 
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 // Converts local file information to a GoogleGenerativeAI.Part object.
 function fileToGenerativePart(path, mimeType) {
   return {

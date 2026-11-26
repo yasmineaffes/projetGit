@@ -1,6 +1,8 @@
 const { GoogleGenerativeAI } = require("@google/generative-ai");
+const path = require('path');
+require("dotenv").config({path: path.resolve(__dirname, ".env") });
 
-const genAI = new GoogleGenerativeAI(GEMINI_API_KEY);
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
 async function run(test) {
   // The Gemini 1.5 models are versatile and work with both text-only and multimodal prompts

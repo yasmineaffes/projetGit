@@ -1,6 +1,6 @@
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 
-const genAI = new GoogleGenerativeAI('AIzaSyByCX2MbBweVqrm8Fjw63ZmzLHJVQZ6IPo');
+const genAI = new GoogleGenerativeAI(GEMINI_API_KEY);
 
 async function run(test) {
   // The Gemini 1.5 models are versatile and work with both text-only and multimodal prompts

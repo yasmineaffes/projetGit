@@ -3,7 +3,7 @@ const fs = require("fs");
 const path = require('path');
 
 
-const genAI = new GoogleGenerativeAI('AIzaSyByCX2MbBweVqrm8Fjw63ZmzLHJVQZ6IPo');
+const genAI = new GoogleGenerativeAI(GEMINI_API_KEY);
 
 // Converts local file information to a GoogleGenerativeAI.Part object.
 function fileToGenerativePart(path, mimeType) {
